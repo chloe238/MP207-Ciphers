@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "VigenereCipher",
+            "request": "launch",
+            "mainClass": "VigenereCipher",
+            "projectName": "MP207-Ciphers_197dd466",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
             "name": "Launch with Arguments Prompt",
             "request": "launch",
             "mainClass": "",
