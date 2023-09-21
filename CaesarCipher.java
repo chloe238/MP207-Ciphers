@@ -1,5 +1,11 @@
 import java.io.PrintWriter;
 
+/**
+ * A basic Vigenere Cipher program that takes input from the command line
+ *
+ * @author Chloe Kelly
+ */
+
 public class CaesarCipher {
   /*
    * Preconditions:
@@ -11,10 +17,10 @@ public class CaesarCipher {
     for (int i = 0; i < starr.length; i++) {
       if (Character.isUpperCase(starr[i])) {
         return false;
-      }
+      }// if
     } // for loop
     return true;
-  }
+  }// isLower(String)
 
   /*
    * Preconditions:
@@ -36,7 +42,7 @@ public class CaesarCipher {
     }
     int ch = nomod % 26; // mod to get correct character code
     return ch;
-  }// getCharCode
+  }// getCharCode(int, int, boolean)
 
   /*
    * Preconditions:
@@ -59,7 +65,7 @@ public class CaesarCipher {
       starr = str.toCharArray();
       text.println("n = " + n + ": " + res);
     } // for loop
-  }// printCipher
+  }// printCipher(String, String, boolean)
 
   public static void main(String[] args) throws Exception {
     PrintWriter pen = new PrintWriter(System.out, true); // new output instance
@@ -85,5 +91,5 @@ public class CaesarCipher {
     } // end program if command is not valid
 
     System.exit(0);
-  }// main
+  }// main(String)
 }// CaesarCipher
